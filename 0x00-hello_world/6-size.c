@@ -1,19 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - return size of variables
+ * main - A Cfile to show sizes of various types
  *
- * Return: Always 0(success)
+ * Return: Always (0) (success)
  */
 int main(void)
 {
-     int i;
-     double d;
-     char c;
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
-     printf("the size of an int is: %lu.\n", (unsigned long)sizeof(i));
-     printf("the size of a double is: %lu.\n", (unsigned long)sizeof(d));
-     printf("the size of c is: %lu.\n", (unsigned long)sizeof(c));
-
-     return(0);
+	printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of long int: %lu bytes(s)\n", (unsigned long)sizeof(c));
+	printf("Size of long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(d));
+	return (0);
 }
-

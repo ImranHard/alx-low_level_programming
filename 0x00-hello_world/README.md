@@ -1,1 +1,1 @@
-adding a readme file
+A readme containing scripts for c Hello_world
