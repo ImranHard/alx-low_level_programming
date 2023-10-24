@@ -9,8 +9,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *gentle;
-	unsigned int d1, d2, king, i;
+	char *panda;
+	unsigned int d1, d2, dkin, i;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -26,20 +26,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > d2)
 		n = d2;
 
-	king = d1 + n;
+	dkin = d1 + n;
 
-	gentle = malloc(king + 1);
+	panda = malloc(dkin + 1);
 
-	if (gentle == NULL)
+	if (panda == NULL)
 		return (NULL);
 
-	for (i = 0; i < king; i++)
+	for (i = 0; i < dkin; i++)
 		if (i < d1)
-			gentle[i] = s1[i];
+			panda[i] = s1[i];
 		else
-			gentle[i] = s2[i - d1];
+			panda[i] = s2[i - d1];
 
-	gentle[i] = '\0';
+	panda[i] = '\0';
 
-	return (gentle);
+	return(panda);
 }

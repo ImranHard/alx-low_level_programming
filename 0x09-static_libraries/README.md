@@ -1,1 +1,1 @@
-A readme file for static libraries
+Create the static library libmy.a containing all the functions listed below:

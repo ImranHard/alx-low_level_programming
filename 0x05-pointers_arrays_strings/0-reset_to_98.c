@@ -1,17 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- *reset - A function that resets the value of a pointer to 98
- *@n: is the variable to be declared
+ *reset_to_98 - check the code
+ *@n: a useless integer
  *
+ * Return: Always 0.
  */
 
 void reset_to_98(int *n)
 {
+	*n = 98;
 
-	printf("%d", *n = 98);
 }
-
-
-

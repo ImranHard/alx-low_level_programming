@@ -1,21 +1,28 @@
 #include "main.h"
-
 /**
- *print_line - a function to print a line
- *@n: u tge bynber if times the character _ should be added
+ * print_line - draws a straight line in the terminal.
+ *@n: print int
+ * Return: Always 0.
  */
 void print_line(int n)
 {
-	if (n <= 0)
-		_putchar('\n');
-	
-	
-	else
-	{
-		int a;
 
-		for (a = 1; a <= n; a++)
-			_putchar('_');
-	}
-	_putchar('\n');
+
+int i;
+
+if (n > 0)
+{
+for (i = 0; i < n; i++)
+{
+_putchar (95);
+}
+
+_putchar ('\n');
+}
+
+else
+{
+_putchar ('\n');
+}
+
 }

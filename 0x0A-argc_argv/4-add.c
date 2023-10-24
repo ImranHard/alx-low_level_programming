@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 /**
-* isNumeric - A function to check if string is numeric
+* isNumeric - checks if string is numeric
 * @s: string to check
-* Return: true if it is numeric, else return false
+* Return: true if is numeric, otherwise return false
 */
 
 bool isNumeric(char *s)

@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - using the printf prototype
+ * main - Prints a text
  *
- * Return: always(0) for success
+ * Return: Always 0.
  */
 int main(void)
 {

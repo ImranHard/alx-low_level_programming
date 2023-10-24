@@ -9,11 +9,11 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *mem, *relloc;
+	char *panda, *relloc;
 	unsigned int i;
 
 	if (ptr != NULL)
-	mem = ptr;
+	panda = ptr;
 	else
 	{ return (malloc(new_size)); }
 	if (new_size == old_size)
@@ -26,7 +26,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	return (0);
 	for (i = 0; i < (old_size || i < new_size); i++)
 	{
-		*(relloc + i) = mem[i];
+		*(relloc + i) = panda[i];
 	}
 	free(ptr);
 return (relloc);

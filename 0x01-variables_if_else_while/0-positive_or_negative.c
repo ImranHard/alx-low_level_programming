@@ -1,20 +1,31 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
-int main(void) {
-      int age;
-      
-      printf( "Please enter your age:");
-      scanf("%d", &age );
-      if ( age < 100) {
-	      printf(" your are pretty young!\n");
-	 }
-     else if ( age == 100 ) {
-	     printf("You are old fa woo\n" );
-     }
-     else {
-	     printf(" You are really old\n" );
-     }
-     return (0);
+/**
+ * * main - Entry point
+ * *
+ * * Return: return one of the 3 options
+ */
+int main(void)
+{
+int n;
 
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
 }
-			
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+else
+{
+
+printf("%d is negative\n", n);
+}
+
+return (0);
+}
